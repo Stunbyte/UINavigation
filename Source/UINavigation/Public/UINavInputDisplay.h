@@ -91,7 +91,7 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "InputDisplay")
 	FString StyleRowName;
 
-private:
+// private:
 
 	UUINavPCComponent* UINavPC = nullptr;
 	

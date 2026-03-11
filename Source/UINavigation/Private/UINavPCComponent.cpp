@@ -781,14 +781,6 @@ void UUINavPCComponent::SetKeyboardInputDataTables(UDataTable* NewKeyIconTable, 
 	}
 }
 
-void UUINavPCComponent::InputKey(const FKey& Key, const EInputEvent Event, const float Delta)
-{
-	if (IsValid(PC))
-	{
-		PC->InputKey(FInputKeyEventArgs::CreateSimulated(Key, Event, Delta));
-	}
-}
-
 void UUINavPCComponent::ForceUpdateAllInputDisplays(const bool bOnlyTopLevel /*= false*/)
 {
 	TArray<UUserWidget*> Widgets;
